@@ -1,0 +1,250 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #5c3b3b; /* Gentle brown text color */
+    background-color: #fffaf0; /* Soft off-white background for a cherry blossom look */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #e8c1c1; /* Soft pink header */
+    color: #5c3b3b; /* Gentle brown text */
+    padding: 40px 0;
+    padding-top: 0.9%;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    float: left;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    color: #5c3b3b;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #ff6f61; /* Soft coral pink for hover effect */
+}
+
+.social-icon {
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #f9e4e4, #ffe9e9); /* Light cherry blossom pink gradient */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #5c3b3b; /* Soft brown color for contrast */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #8d6e63; /* Muted brown for text */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #d4a5a5; /* Cherry blossom pink button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6f61; /* Softer pink for hover */
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff5f5; /* Very light pink background */
+}
+
+.about h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #5c3b3b;
+}
+
+.about p {
+    margin-bottom: 20px;
+    color: #8d6e63; /* Muted brown for text */
+}
+
+/* Works Section */
+.work h3 {
+    text-align: center;
+    color: #5c3b3b; /* Gentle brown heading */
+}
+
+/* Work Items Container */
+.work-items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Adjusting Work Item Width */
+.work-item {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Work Item List Styles */
+.work-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.work-item ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Custom Bullet (Tick Mark) */
+.work-item ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff6f61; /* Coral pink tick mark */
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+/* Hover Effect for Work Items */
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Summary Section */
+.skills-summary {
+    padding: 60px 0;
+    background-color: #fbeaea; /* Light pinkish hue */
+    text-align: center;
+}
+
+.skills-summary h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    color: #5c3b3b;
+}
+
+/* Skills Summary Item Styles */
+.skills-summary-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Skills */
+.skills-summary-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffe9e9; /* Light cherry blossom pink background */
+}
+
+.contact p {
+    padding-bottom: 20px;
+    color: #8d6e63;
+}
+
+.contact h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #5c3b3b;
+}
+
+/* Footer */
+.footer {
+    background-color: #e8c1c1; /* Light pink for footer */
+    color: #5c3b3b;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Media Query for Specific Screen Width */
+@media (max-width: 356px) {
+    .header {
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center text */
+    }
+
+    /* Remove Floats and Adjust Navigation Links */
+    .header h1 {
+        float: none; /* Remove float */
+        margin: 10px 0; /* Space between header title and links */
+    }
+
+    .nav {
+        float: none; /* Remove float */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack links vertically */
+        margin-top: 20px; /* Add some spacing above navigation */
+    }
+
+    .nav a {
+        display: block; /* Make each link a block element */
+        margin: 10px 0; /* Add vertical spacing between links */
+        text-align: center; /* Center-align text */
+    }
+}
